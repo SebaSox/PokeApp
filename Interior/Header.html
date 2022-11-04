@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/Menu.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <div class="sidebar-inner">
+        <header class="sidebar-header">
+          <button
+            type="button"
+            class="sidebar-burger"
+            onclick="toggleSidebar()">
+          <img src="Imagenes/Iconos/pokebolas.png" class="sidebar-icono" />
+        </button>
+          <img src="Imagenes/Logo.png" class="sidebar-logo" />
+        </header>
+        <nav class="sidebar-menu">
+        <!-- POKEDEX -->
+        <button type="button" class="has-border" onClick="parent.location='Index.php?Pagina=1'">
+            <img src="Imagenes/Iconos/PokedexReal.png" />
+            <span>Pokedex</span>
+          </button>
+        <!-- TABLA -->
+        <button type="button" class="has-border" onClick="parent.location='Index.php?Pagina=2'">
+          <img src="Imagenes/Iconos/Tipos.png" />
+          <span>Tipos</span>
+        </button>
+        <!-- Calculadora -->
+        <button type="button" class="has-border" onClick="parent.location='Index.php?Pagina=3'">
+          <img src="Imagenes/Iconos/PokeDex.png" />
+          <span>Calculadora</span>
+        </button>
+         
+        </nav>
+      </div>
+    </nav>
+
+    <script type="text/javascript">
+      const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+  </body>
+</html>

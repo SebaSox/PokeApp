@@ -1,0 +1,15 @@
+
+
+td{
+    align-items: center;
+    text-align: center;
+}
+
+td > img{
+    width: 40%;
+    height: 20%;
+}
+
+td > p{
+    color: azure;
+}
